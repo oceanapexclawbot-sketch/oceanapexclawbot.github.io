@@ -18,8 +18,10 @@
         .roi-box { background: white; border: 1px solid #ddd; padding: 15px; margin: 15px 0; }
         .roi-box strong { display: block; margin-bottom: 5px; color: #2e7d32; }
         .verdict { font-size: 0.9rem; border-top: 1px solid #eee; padding-top: 10px; color: #555; }
-        .cta-button { display: inline-block; background: #1a1a1a; color: white; padding: 12px 24px; text-decoration: none; font-weight: 700; margin-top: 10px; transition: opacity 0.2s; }
+        .cta-button { display: inline-block; background: #1a1a1a; color: white; padding: 12px 24px; text-decoration: none; font-weight: 700; margin-top: 10px; transition: opacity 0.2s; cursor: pointer; border: none; }
         .cta-button:hover { opacity: 0.8; }
+        .waitlist-form { margin-top: 15px; display: flex; gap: 10px; }
+        .waitlist-input { padding: 10px; border: 1px solid #ddd; flex-grow: 1; }
         footer { margin-top: 80px; font-size: 0.8rem; color: #999; text-align: center; }
     </style>
 </head>
@@ -63,7 +65,11 @@
             <strong>The Math:</strong> Replaces a creative agency ($2k/mo) with a $21/mo agent that data-validates every design.
         </div>
         <div class="verdict"><strong>Verdict:</strong> A must-have for anyone running Meta or Google ads.</div>
-        <a href="https://www.adcreative.ai" class="cta-button">Join the Hunt →</a>
+        <p><em>Affiliate status pending. Join our priority notification list below:</em></p>
+        <form class="waitlist-form" action="https://formspree.io/f/xvgzlowy" method="POST">
+            <input type="email" name="email" class="waitlist-input" placeholder="Your work email" required>
+            <button type="submit" class="cta-button" style="margin-top: 0;">Get Alert →</button>
+        </form>
     </article>
 
     <footer>
